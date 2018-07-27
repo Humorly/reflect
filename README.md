@@ -11,7 +11,7 @@
 
 class test;
 
-register_class(test);
+register_type(test);
 
 class test 
 {
@@ -20,4 +20,4 @@ class test
 
 #2:在需要获取class test的地方调用get_class("test")获取之
 
-auto t = get_class("test");
+auto t = get_register_type("test");
